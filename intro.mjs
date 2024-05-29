@@ -29,15 +29,34 @@ import puppeteer from 'puppeteer-core';
 (async () => {
     const browser = await puppeteer.launch({
         executablePath: '/usr/bin/google-chrome',
-        headless: false,
+        headless: true,
         defaultViewport: { width: 1920, height: 1000 },
         slowMo: 250,
         userDataDir: 'temporary',
     });
     const page = await browser.newPage();
-    await page.goto('https://quotes.toscrape.com/');
+    await page.goto('https://azmarif.dev/');
 
-    await page.screenshot({ path: 'quotes.png' });
+    const name = await page.evaluate(() => {
+        const myNameElement = document.querySelector('#nameid');
+        // const quotes = [];
 
+        // for (const nameElement of myNameElement)
+        // {
+        //     const nameText = nameElement.querySelector(selectors)
+        // }
+        const nameText = myNameElement.querySelector('.elementor-widget-container .elementor-heading-title').innerHTML;
+        
+        // console.log(nameText);
+        return nameText
+    });
+
+
+
+
+
+    console.log(name);
+    // await page.screenshot({ path: 'quotes.png' });
+    // console.log(await page.content());
     await browser.close();
 })();
