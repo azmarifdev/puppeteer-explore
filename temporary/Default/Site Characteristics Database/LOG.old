@@ -1,2 +1,3 @@
-2024/05/30-02:02:05.572 fe54 Creating DB /home/azmarif/Files/Code/Others/Automation/puppeteer-explore/temporary/Default/Site Characteristics Database since it was missing.
-2024/05/30-02:02:05.588 fe54 Reusing MANIFEST /home/azmarif/Files/Code/Others/Automation/puppeteer-explore/temporary/Default/Site Characteristics Database/MANIFEST-000001
+2024/05/30-04:13:39.949 3186b Reusing MANIFEST /home/azmarif/Files/Code/Others/Automation/puppeteer-explore/temporary/Default/Site Characteristics Database/MANIFEST-000001
+2024/05/30-04:13:39.949 3186b Recovering log #3
+2024/05/30-04:13:39.949 3186b Reusing old log /home/azmarif/Files/Code/Others/Automation/puppeteer-explore/temporary/Default/Site Characteristics Database/000003.log 
