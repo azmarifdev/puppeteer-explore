@@ -29,7 +29,7 @@ import puppeteer from 'puppeteer';
         await page.waitForNavigation({ waitUntil: 'networkidle2' });
         await page.waitForSelector('.elementor-heading-title');
 
-        //  evaluate
+        // evaluate
         const name = await page.evaluate(() => {
             const myNameElement = document.querySelector('#nameid .elementor-widget-container .elementor-heading-title');
             return myNameElement ? myNameElement.innerHTML : 'Name not found';
