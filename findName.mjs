@@ -17,7 +17,7 @@ import puppeteer from 'puppeteer-core';
 
         // search field type
         const searchField = await page.waitForSelector('#searchbox_input');
-        await searchField.type('azmarifdev portfolio');
+        await searchField.type('azmarifdev Portfolio Website');
         await page.keyboard.press('Enter');
 
         // first website click
