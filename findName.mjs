@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer-core';
+// const puppeteer = require('puppeteer');
 
 (async () => {
     try {
